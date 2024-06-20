@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #141414;
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+}
+
+#title {
+  font-size: 3vw;
+  padding: 10px;
+  text-align: center;
+  background: #1f1b24;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #483248;
+  height: 6vw;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.7vw;
+  color: black;
+}
+
+nav a:hover {
+  color: rgb(38, 37, 37);
+  border-bottom: #141414 solid 2px;
+}
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-content-head {
+  margin: 20px;
+  font-size: 4vw;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: burlywood;
+}
+#movie-box {
+  width: 80%;
+  border: solid #1f1b24 2px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+#movie-card {
+  padding: 10px;
+  width: 30%;
+  border: solid burlywood 1px;
+  background: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#movie-poster img {
+  width: 100%;
+  height: 100%;
+}
+
+#movie-title {
+  font-size: 2vw;
+  padding: 10px 0px;
+  color: burlywood;
+}
+
+#movie-description {
+  font-size: 1.3vw;
+  padding: 3px 0px 5px 0px;
+  color: #b3afaf;
+}
+#divider {
+  background-color: black;
+  height: 3px;
+  width: 100%;
+}
+
+#footer {
+  padding: 30px;
+  text-align: center;
+  background: #483248;
+}
+
+#text {
+  font-size: 2.5vw;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+#copyright {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 500px) {
+  #title {
+    font-size: 4vw;
+  }
+
+  nav a {
+    font-size: 2.4vw;
+  }
+  #main-content-head {
+    margin: 10px;
+  }
+  #movie-box {
+    width: 60%;
+    padding: 20px 10px;
+    gap: 1rem;
+    margin-bottom: 30px;
+  }
+
+  #movie-card {
+    padding: 10px;
+    width: 90%;
+  }
+
+  #movie-title {
+    padding: 5px 0px 0px 0px;
+    font-size: 2.6vw;
+  }
+
+  #movie-description {
+    font-size: 1.8vw;
+  }
+
+  #footer {
+    padding: 10px;
+  }
+
+  #text {
+    margin-bottom: 0px;
+  }
+  #copyright {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  #title {
+    font-size: 4vw;
+  }
+
+  nav a {
+    font-size: 2.4vw;
+  }
+  #main-content-head {
+    margin: 10px;
+  }
+  #movie-box {
+    width: 90%;
+    padding: 20px 10px;
+    gap: 2rem;
+    margin-bottom: 30px;
+  }
+
+  #movie-card {
+    padding: 10px;
+    width: 45%;
+  }
+
+  #movie-title {
+    padding: 5px 0px 0px 0px;
+    font-size: 2.6vw;
+  }
+
+  #movie-description {
+    font-size: 1.8vw;
+  }
+
+  #footer {
+    padding: 10px;
+  }
+
+  #text {
+    margin-bottom: 0px;
+  }
+  #copyright {
+    font-size: 1.5vw;
+  }
+}
